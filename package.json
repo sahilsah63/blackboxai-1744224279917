@@ -1,0 +1,28 @@
+{
+  "name": "user-workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "tailwindcss -i ./src/styles.css -o ./dist/tailwind.css",
+    "watch": "tailwindcss -i ./src/styles.css -o ./dist/tailwind.css --watch",
+    "dev": "concurrently \"npm run watch\" \"node server.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mongoose": "^8.13.2",
+    "ws": "^8.18.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.2",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.3"
+  }
+}
